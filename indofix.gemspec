@@ -6,12 +6,12 @@ require "indofix/version"
 Gem::Specification.new do |spec|
   spec.name          = "indofix"
   spec.version       = Indofix::VERSION
-  spec.authors       = ["mkhuda"]
-  spec.email         = ["mhmmd.huda@gmail.com"]
+  spec.authors       = ["Muhammad K. Huda"]
+  spec.email         = ["hello@mkhuda.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Affixist for Bahasa}
+  spec.description   = %q{Check the word base derived from affixes in Bahasa}
+  spec.homepage      = "https://github.com/iBahasa/indofix"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,7 +30,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "verbal_expressions", "~> 0.1.5"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.required_ruby_version = '~> 2.2.0'
 end
