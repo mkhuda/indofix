@@ -1,5 +1,5 @@
 # Indofix
-Affixed word to the base word for Bahasa
+Affixed word to the base word for Bahasa. As used for [ibahasa.com](https://www.ibahasa.com) Puebi Engine.
 
 ## Installation
 
