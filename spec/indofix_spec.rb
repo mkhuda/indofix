@@ -3,7 +3,11 @@ RSpec.describe Indofix do
     expect(Indofix::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "Welcome to Indofix" do
+    expect(Indofix.welcome).to eq("Welcome to Indofix")
+  end
+
+  it "Simple nomina check akhiran -an" do
+    expect(Indofix.check("nomina", "sulapan")).to eq("sulap")
   end
 end
