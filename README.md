@@ -6,7 +6,7 @@ Affixed word to the base word for Bahasa
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'indofix'
+gem "indofix", :git => "git://github.com/iBahasa/indofix.git"
 ```
 
 And then execute:
