@@ -19,6 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
+```
+Indofix.check("nomina", "sulapan") => "sulap"
+```
 
 ## Contributing
 
