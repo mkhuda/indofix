@@ -13,7 +13,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (-ku)‎
@@ -26,7 +26,7 @@ module Indofix
         find 'ku'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (-mu)‎
@@ -39,7 +39,7 @@ module Indofix
         find 'mu'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (-nya)‎ 
@@ -52,7 +52,7 @@ module Indofix
         find 'nya'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-)‎ 
@@ -65,7 +65,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-an)‎
@@ -79,7 +79,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-anku)‎ 
@@ -93,7 +93,7 @@ module Indofix
         find 'anku'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-anlah)‎ 
@@ -107,7 +107,7 @@ module Indofix
         find 'anlah'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-anmu)‎ 
@@ -121,7 +121,7 @@ module Indofix
         find 'anmu'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-annya)‎ 
@@ -135,7 +135,7 @@ module Indofix
         find 'annya'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-ku)‎ 
@@ -149,7 +149,7 @@ module Indofix
         find 'ku'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-mu)‎ 
@@ -163,7 +163,7 @@ module Indofix
         find 'mu'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ke-nya)‎ 
@@ -177,7 +177,7 @@ module Indofix
         find 'nya'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (keber-an)‎ 
@@ -191,7 +191,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (kepeng-an)‎ 
@@ -205,7 +205,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (kese-an)‎ 
@@ -219,7 +219,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (keter-an)‎ 
@@ -233,7 +233,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (ketidak-an)‎ 
@@ -247,7 +247,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (pe-)‎
@@ -260,7 +260,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (pe-an)‎
@@ -274,7 +274,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (peng-)‎
@@ -287,7 +287,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (peng-an)‎
@@ -301,7 +301,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (per-)‎
@@ -314,7 +314,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (per-an)‎
@@ -328,7 +328,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (se-)‎ 
@@ -341,7 +341,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (se-an)‎
@@ -355,7 +355,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Nomina (se-nya)‎
@@ -369,7 +369,7 @@ module Indofix
         find 'nya'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
 
   end

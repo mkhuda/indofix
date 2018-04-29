@@ -13,7 +13,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # pelepasan imbuhan 'me' dengan 'ng'
@@ -26,7 +26,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # pelepasan imbuhan 'me' dengan 'nge'
@@ -39,7 +39,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # pelepasan imbuhan 'me' dengan 'ny'
@@ -52,7 +52,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # pelepasan imbuhan 'me' dengan 'm'
@@ -65,9 +65,10 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
+    private
     # auto processing
     # pemroresan pelepasan n -> ng(nge)/ny, m
     def process_imbuhan_n_ng(match)
@@ -77,22 +78,22 @@ module Indofix
         if !imbuhan_n_x(@string).nil?
           if !imbuhan_ng_x(@string).nil?
             if !imbuhan_nge_x(@string).nil?
-              return imbuhan_nge_x(@string)
+              imbuhan_nge_x(@string)
             else
-              return imbuhan_ng_x(@string)
+              imbuhan_ng_x(@string)
             end
           elsif !imbuhan_ny_x(@string).nil?
-            return imbuhan_ny_x(@string)
+            imbuhan_ny_x(@string)
           else
-            return imbuhan_n_x(@string)
+            imbuhan_n_x(@string)
           end
         elsif !imbuhan_m_x(@string).nil?
-          return imbuhan_m_x(@string)
+          imbuhan_m_x(@string)
         else
-          return @match
+          @match
         end
       else
-        return @match
+        @match
       end
     end
     
@@ -102,7 +103,7 @@ module Indofix
       if !@match.nil?
         @string = @match[1]
       else
-        return @match
+        @match
       end
     end
     

@@ -7,7 +7,16 @@ RSpec.describe Indofix do
     expect(Indofix.welcome).to eq("Welcome to Indofix")
   end
 
-  it "Simple nomina check akhiran -an" do
-    expect(Indofix.check("nomina", "sulapan")).to eq("sulap")
+  it "Array Result Check" do
+    expect(Indofix.check("nomina", "sulapan")).to be_a_kind_of(Array)
+    expect(Indofix.check("verba", "memasangi")).to be_a_kind_of(Array)
+    expect(Indofix.check("kpst", "ngejos")).to be_a_kind_of(Array)
+    expect(Indofix.check("other", "keterlaluan")).to be_a_kind_of(Array)
   end
+
+  
+  it "Nomina Single Result Check" do
+    expect(Indofix.check("nomina", "sulapan")).to eq(["sulap"])
+  end
+
 end

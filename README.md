@@ -20,8 +20,11 @@ Or install it yourself as:
 ## Usage
 
 ```
-Indofix.check("nomina", "sulapan") => "sulap"
+Indofix.check("nomina", "sulapan") => ["sulap"] (Array)
+
+Indofix.check("nomina", "seandainya") => ["seandai", "andainya", "andai"] (Array)
 ```
+Valid params is `nomina`, `verba`, `kpst`, and `other`
 
 ## Contributing
 

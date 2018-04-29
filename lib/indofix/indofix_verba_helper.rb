@@ -13,7 +13,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+      @verex.match(string)
     end
     
     # id:Verba (-i)‎ 
@@ -26,7 +26,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (-kan)‎
@@ -39,7 +39,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (-kanlah)‎
@@ -52,7 +52,7 @@ module Indofix
         find 'kanlah'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (-lah)‎
@@ -65,7 +65,7 @@ module Indofix
         find 'lah'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ber-)‎ 
@@ -78,7 +78,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ber-an)‎ 
@@ -92,7 +92,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ber-kan)
@@ -106,7 +106,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (di-)‎ 
@@ -119,7 +119,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (di-i)‎ 
@@ -133,7 +133,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (di-kan)‎ 
@@ -147,7 +147,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (diper-)‎
@@ -160,7 +160,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (diper-i)
@@ -174,7 +174,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (diper-kan)‎ 
@@ -188,7 +188,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (kau-)‎
@@ -201,7 +201,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (kau-i)‎
@@ -215,7 +215,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (kau-kan)‎ 
@@ -229,7 +229,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ke-an)‎
@@ -243,7 +243,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ku-)‎
@@ -256,7 +256,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ku-i)‎
@@ -270,7 +270,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ku-kan)‎
@@ -284,7 +284,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (me-)‎ 
@@ -297,7 +297,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (me-i)
@@ -311,7 +311,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (me-kan)‎ 
@@ -325,7 +325,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (memper-)‎ 
@@ -338,7 +338,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (memper-i)‎ 
@@ -352,7 +352,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (memper-kan)‎ 
@@ -366,7 +366,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (per-kan)
@@ -380,7 +380,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (plural -an)‎ 
@@ -393,7 +393,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (plural ber-)‎ 
@@ -406,7 +406,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (plural ber-an)‎ 
@@ -420,7 +420,7 @@ module Indofix
         find 'an'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (plural me-)‎ 
@@ -433,7 +433,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (plural me-i)‎ 
@@ -447,7 +447,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (plural me-kan)‎ 
@@ -461,7 +461,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return process_imbuhan_n_ng(@verex.match(string))
+     @verex.match(string)
     end
     
     # id:Verba (plural ter-)‎ 
@@ -474,7 +474,7 @@ module Indofix
         end_capture
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ter-)
@@ -485,7 +485,7 @@ module Indofix
         anything
         end_capture
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ter-i)‎
@@ -499,7 +499,7 @@ module Indofix
         find 'i'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
     # id:Verba (ter-kan)‎
@@ -513,7 +513,7 @@ module Indofix
         find 'kan'
         end_of_line
       end
-      return @verex.match(string)
+     @verex.match(string)
     end
     
   end
