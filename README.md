@@ -19,10 +19,12 @@ Or install it yourself as:
 
 ## Usage
 
-```
-Indofix.check("nomina", "sulapan") => ["sulap"] (Array)
+```ruby
+require('indofix')
 
-Indofix.check("nomina", "seandainya") => ["seandai", "andainya", "andai"] (Array)
+Indofix.check("nomina", "sulapan") => ["sulap"] # Return (Array)
+
+Indofix.check("nomina", "seandainya") => ["seandai", "andainya", "andai"] # Return (Array)
 ```
 Valid params is `nomina`, `verba`, `kpst`, and `other`
 
