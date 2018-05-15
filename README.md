@@ -26,6 +26,8 @@ Indofix.check("nomina", "seandainya") => ["seandai", "andainya", "andai"] (Array
 ```
 Valid params is `nomina`, `verba`, `kpst`, and `other`
 
+> This gem are still under development, Open Issues / Ideas are welcome. Thank you
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/iBahasa/indofix. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
