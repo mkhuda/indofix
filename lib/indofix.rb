@@ -28,6 +28,7 @@ module Indofix
     end
     
     # Let's start check
+    #
     # options:
     # * nomina
     # * verba
