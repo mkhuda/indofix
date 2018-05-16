@@ -41,7 +41,7 @@ module Indofix
     # * kpst
     def check(params, string)
       @result = {}
-      if (!params.empty? || !string.empty?)
+      if (!params.empty? && !string.empty?)
         case params
           when 'nomina'
             @result = nomina_probe(string)
