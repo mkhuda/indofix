@@ -1,4 +1,4 @@
-# Indofix
+# Indofix [![Build Status](https://travis-ci.org/iBahasa/indofix.svg?branch=master)](https://travis-ci.org/iBahasa/indofix)
 Affixed word to the base word for Bahasa. As used for [ibahasa.com](https://www.ibahasa.com) Puebi Engine. (Beta Un-well tested)
 
 ## Installation
