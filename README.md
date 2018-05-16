@@ -29,6 +29,7 @@ Indofix.check("nomina", "seandainya") => ["seandai", "andainya", "andai"] # Retu
 Indofix.stupid_check("menyisakan") => {"menyisak"=>"other_adverbia_x_an", "menyisa"=>"verba_x_kan", "nyisakan"=>"other_adjektiva_me_x", "nyisa"=>"verbaplural_me_x_kan", "nyisak"=>"other_adjektiva_me_x_an", "enyisakan"=>"imbuhan_m_x"} # Return (Hash)
 ```
 Valid params is `nomina`, `verba`, `kpst`, and `other`
+
 NOTICE: `kpst` is under going.
 
 > This gem are still under development, Open Issues / Ideas are welcome. Thank you
