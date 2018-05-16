@@ -3,6 +3,7 @@ require "indofix/indofix_nomina_helper"
 require "indofix/indofix_other_helper"
 require "indofix/indofix_verba_helper"
 require "indofix/indofix_kpst_helper"
+require "indofix/errors"
 
 module Indofix
   class << self
@@ -26,6 +27,10 @@ module Indofix
     def check_other
       @check_other ||= IndofixOtherHelper.new
     end
+
+    def error
+      @error ||= Error.new
+    end
     
     # Let's start check
     #
@@ -36,7 +41,7 @@ module Indofix
     # * kpst
     def check(params, string)
       @result = {}
-      if (!params.nil? || !string.nil?)
+      if (!params.empty? || !string.empty?)
         case params
           when 'nomina'
             @result = nomina_probe(string)
@@ -49,7 +54,26 @@ module Indofix
         end
         @result.keys
       else
-        raise(Error, "Indofix Error")
+        raise(error, "Params and String cannot Empty")
+      end
+    end
+
+    # Let's check all possibilities at once
+    #
+    # Params String
+    # Return Hash
+    def stupid_check(string)
+      @result = {}
+      if !string.empty?
+        @nomina = nomina_probe(string)
+        @verba = verba_probe(string)
+        @other = other_probe(string)
+        @kpst = kpst_probe(string)
+        hashes = [@nomina, @verba, @other, @kpst]
+
+        @result = Hash[*hashes.map(&:to_a).flatten]
+      else
+        raise(error, "String cannot empty/nil")
       end
     end
 
@@ -72,7 +96,7 @@ module Indofix
       @detected = Hash.new
       kpst.each do |method|
         transform = check_kpst.send(method, string)
-        @detected[transform] = method.to_s unless transform.nil?
+        @detected[transform[1]] = method.to_s unless transform.nil?
       end
       return @detected
     end
@@ -84,7 +108,7 @@ module Indofix
       @detected = Hash.new
       verba.each do |method|
         transform = check_verba.send(method, string)
-        @detected[transform] = method.to_s unless transform.nil?
+        @detected[transform[1]] = method.to_s unless transform.nil?
       end
       return @detected
     end
